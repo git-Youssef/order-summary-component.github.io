@@ -1,0 +1,169 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --verypaleblue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #243053;
+}
+
+img{
+    width: 100%;
+    display: block
+}
+
+.order_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:hsl(225, 100%, 94%);
+    background-image: url(../imgs/pattern-background-desktop.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 15px;
+}
+.order_card > section {
+  max-width: 375px;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow:  0 0 0 0 ;
+  overflow: hidden;
+  box-shadow: 0px 8px 20px -10px hsl(245deg 75% 52% / 49%),
+}
+
+
+.order_card .content{
+    background-color: white;
+    text-align: center;
+    padding: 20px 40px;
+
+}
+
+.order_card .content h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+   
+}
+
+.order_card .content p{
+    color:hsl(224, 23%, 55%) ;
+    margin-bottom: 20px;
+}
+
+.order_card .content .choose_plan{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.order_card .content .choose_plan .left{
+
+    display: flex;
+    align-items: center;
+}
+.order_card .content .choose_plan .left>img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    
+}
+
+.order_card .content .choose_plan .left div>span{
+    color: hsl(224, 23%, 55%);
+}
+
+.order_card .content .choose_plan  .right>a{
+    color: hsl(245, 75%, 52%) ;
+    font-weight: 600;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.order_card .content .choose_plan  .right>a:hover{
+
+    color: #766CF1 ;
+    text-decoration: none;
+}
+
+.order_card .content .buttons > .payment{
+    display: block;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 5px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 9px 20px -7px hsl(245deg 75% 52% / 76%);
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 0 ;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+.order_card .content .buttons > .payment:hover{
+    background-color: #766CF1;
+}
+    
+ 
+
+.order_card .content .buttons > .cancel_ord{
+    display: block;
+    color: hsl(224, 23%, 55%); 
+    margin-top: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s; 
+}
+
+.order_card .content .buttons > .cancel_ord:hover{
+    color: black;
+    transition: all .5s;
+   
+}
+
+@media screen and (max-width:375px){
+    .order_card{
+        background-image: none;
+    }
+
+}
